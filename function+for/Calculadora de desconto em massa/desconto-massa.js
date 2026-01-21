@@ -1,0 +1,9 @@
+function descontoEmMassa(arrayPrecos, percentualDescontos) {
+let arrayDescontado= []
+    
+    for(let i= 0; i < arrayPrecos.length; i++) {
+    arrayDescontado.push(arrayPrecos[i] - (arrayPrecos[i] * percentualDescontos))
+
+    } return arrayDescontado
+}
+    console.log(descontoEmMassa([100, 50, 25], 0.1))
